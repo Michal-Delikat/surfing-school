@@ -1,0 +1,1567 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Barrel — szkoła surfingu w Wydmowie</title>
+    <meta
+      name="description"
+      content="Szkoła surfingu Barrel w Wydmowie. Kursy dla debiutantów i wracających, małe grupy, sprzęt w cenie i instruktorzy z certyfikatami. Projekt koncepcyjny."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#12294F" />
+    <meta name="color-scheme" content="light" />
+
+    <link rel="icon" href="assets/favicon/favicon.ico" sizes="any" />
+    <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/favicon/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <link
+      rel="preload"
+      href="assets/fonts/anton-latin-ext.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/anton-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/dm-sans-latin-ext.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/dm-sans-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/sections.css" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:site_name" content="Barrel" />
+    <meta property="og:title" content="Barrel — szkoła surfingu w Wydmowie" />
+    <meta
+      property="og:description"
+      content="Kursy surfingu w małej grupie, sprzęt w cenie, instruktor w wodzie. Fikcyjna szkoła Barrel w Wydmowie na Półwyspie Helskim."
+    />
+    <meta property="og:image" content="assets/og/og-barrel.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Surfer w tubie fali na turkusowej wodzie" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Barrel — szkoła surfingu w Wydmowie" />
+    <meta
+      name="twitter:description"
+      content="Projekt koncepcyjny szkoły surfingu. Małe grupy, sprzęt w cenie, instruktor w wodzie."
+    />
+    <meta name="twitter:image" content="assets/og/og-barrel.jpg" />
+
+    <script type="module" src="js/main.js"></script>
+  </head>
+
+  <body id="top">
+    <a class="skip-link" href="#main">Przejdź do treści</a>
+
+    <header class="site-header" id="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="#top" aria-label="Barrel — początek strony">
+          <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <defs>
+              <clipPath id="logo-clip-header"><circle cx="38" cy="36" r="14" /></clipPath>
+            </defs>
+            <circle cx="32" cy="32" r="30" fill="var(--logo-outer)" />
+            <circle
+              cx="35.5"
+              cy="34.5"
+              r="23"
+              fill="var(--blue)"
+              stroke="var(--logo-ring)"
+              stroke-width="2.5"
+            />
+            <circle
+              cx="38"
+              cy="36"
+              r="14"
+              fill="var(--sand)"
+              stroke="var(--logo-ring)"
+              stroke-width="2.5"
+            />
+            <g clip-path="url(#logo-clip-header)">
+              <circle cx="35" cy="31" r="3.6" fill="var(--coral)" />
+              <path d="M20 41C28 35 33 35 38 40C43 45 48 45 56 38V56H20Z" fill="var(--blue)" />
+            </g>
+          </svg>
+          <span class="brand__word" aria-hidden="true">Barrel</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Nawigacja główna">
+          <ul class="site-nav__list list-reset" role="list">
+            <li><a class="site-nav__link" href="#kursy">Kursy</a></li>
+            <li><a class="site-nav__link" href="#jak">Jak to działa</a></li>
+            <li><a class="site-nav__link" href="#galeria">Galeria</a></li>
+            <li><a class="site-nav__link" href="#terminy">Terminy</a></li>
+            <li><a class="site-nav__link" href="#faq">FAQ</a></li>
+          </ul>
+          <a class="btn btn--primary btn--small" href="#terminy">Zarezerwuj</a>
+        </nav>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-open
+        >
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="visually-hidden">Otwórz menu</span>
+        </button>
+      </div>
+    </header>
+
+    <dialog class="mobile-menu" id="mobile-menu" aria-labelledby="mobile-menu-title">
+      <div class="mobile-menu__inner container">
+        <div class="mobile-menu__top">
+          <a class="brand" href="#top" aria-label="Barrel — początek strony" data-menu-link>
+            <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+              <defs>
+                <clipPath id="logo-clip-menu"><circle cx="38" cy="36" r="14" /></clipPath>
+              </defs>
+              <circle cx="32" cy="32" r="30" fill="var(--logo-outer)" />
+              <circle
+                cx="35.5"
+                cy="34.5"
+                r="23"
+                fill="var(--blue)"
+                stroke="var(--logo-ring)"
+                stroke-width="2.5"
+              />
+              <circle
+                cx="38"
+                cy="36"
+                r="14"
+                fill="var(--sand)"
+                stroke="var(--logo-ring)"
+                stroke-width="2.5"
+              />
+              <g clip-path="url(#logo-clip-menu)">
+                <circle cx="35" cy="31" r="3.6" fill="var(--coral)" />
+                <path d="M20 41C28 35 33 35 38 40C43 45 48 45 56 38V56H20Z" fill="var(--blue)" />
+              </g>
+            </svg>
+            <span class="brand__word" aria-hidden="true">Barrel</span>
+          </a>
+          <button class="mobile-menu__close" type="button" data-menu-close>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <path d="M2 2L16 16M16 2L2 16" stroke="currentColor" stroke-width="1.5" />
+            </svg>
+            <span class="visually-hidden">Zamknij menu</span>
+          </button>
+        </div>
+
+        <nav class="mobile-menu__nav" aria-label="Nawigacja mobilna">
+          <h2 class="visually-hidden" id="mobile-menu-title">Menu</h2>
+          <a class="mobile-menu__link" href="#kursy" data-menu-link>Kursy</a>
+          <a class="mobile-menu__link" href="#jak" data-menu-link>Jak to działa</a>
+          <a class="mobile-menu__link" href="#galeria" data-menu-link>Galeria</a>
+          <a class="mobile-menu__link" href="#terminy" data-menu-link>Terminy</a>
+          <a class="mobile-menu__link" href="#info" data-menu-link>Praktycznie</a>
+          <a class="mobile-menu__link" href="#faq" data-menu-link>FAQ</a>
+        </nav>
+
+        <div class="mobile-menu__footer">
+          <p class="mobile-menu__meta">Wydmowo, Półwysep Helski<br />hello@barrel.example</p>
+          <a class="btn btn--primary" href="#terminy" data-menu-link>Zarezerwuj kurs</a>
+        </div>
+      </div>
+    </dialog>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__media" aria-hidden="true">
+          <picture class="hero__picture">
+            <source
+              type="image/avif"
+              srcset="
+                assets/img/hero-poster-480.avif   480w,
+                assets/img/hero-poster-800.avif   800w,
+                assets/img/hero-poster-1200.avif 1200w,
+                assets/img/hero-poster-1600.avif 1600w,
+                assets/img/hero-poster-2000.avif 2000w
+              "
+              sizes="100vw"
+            />
+            <source
+              type="image/webp"
+              srcset="
+                assets/img/hero-poster-480.webp   480w,
+                assets/img/hero-poster-800.webp   800w,
+                assets/img/hero-poster-1200.webp 1200w,
+                assets/img/hero-poster-1600.webp 1600w,
+                assets/img/hero-poster-2000.webp 2000w
+              "
+              sizes="100vw"
+            />
+            <img
+              class="hero__image"
+              src="assets/img/hero-poster-1600.jpg"
+              srcset="
+                assets/img/hero-poster-480.jpg   480w,
+                assets/img/hero-poster-800.jpg   800w,
+                assets/img/hero-poster-1200.jpg 1200w,
+                assets/img/hero-poster-1600.jpg 1600w,
+                assets/img/hero-poster-2000.jpg 2000w
+              "
+              sizes="100vw"
+              width="1600"
+              height="900"
+              alt=""
+              fetchpriority="high"
+            />
+          </picture>
+          <video
+            class="hero__video"
+            id="hero-video"
+            muted
+            loop
+            playsinline
+            preload="none"
+            aria-hidden="true"
+            tabindex="-1"
+          ></video>
+        </div>
+        <div class="hero__overlay" aria-hidden="true"></div>
+
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <p class="eyebrow hero__eyebrow">Szkoła surfingu · Wydmowo, Półwysep Helski</p>
+            <h1 class="hero__title" id="hero-title">
+              Naucz się czytać falę.
+              <span class="hero__title-accent">Barrel przyjdzie sam.</span>
+            </h1>
+            <p class="hero__lead">
+              Kursy na spokojnej Ławicy. Mała grupa, deska i pianka w cenie, instruktor w wodzie
+              obok Ciebie — nie na brzegu z megafonem.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#terminy">
+                Zarezerwuj kurs
+                <svg class="btn__icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M2 8H14M9 3L14 8L9 13" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+              </a>
+              <a class="btn btn--ghost" href="#terminy">Zobacz terminy</a>
+            </div>
+          </div>
+
+          <div class="hero__foot">
+            <ul class="hero__trust list-reset" role="list">
+              <li>Mała grupa do 6 osób</li>
+              <li>Sprzęt w cenie</li>
+              <li>Instruktorzy z certyfikatami</li>
+              <li>Plan B na złą pogodę</li>
+            </ul>
+            <button class="hero__media-control" type="button" id="video-toggle" hidden>
+              <svg data-video-icon="pause" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true">
+                <rect x="2" y="1" width="2.5" height="10" />
+                <rect x="7.5" y="1" width="2.5" height="10" />
+              </svg>
+              <svg data-video-icon="play" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true" hidden>
+                <path d="M2 1L11 6L2 11Z" />
+              </svg>
+              <span data-video-label>Zatrzymaj tło</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- COURSES -->
+      <section class="section courses" id="kursy" aria-labelledby="kursy-title">
+        <div class="container">
+          <header class="section__head section__head--split" data-reveal>
+            <div>
+              <p class="eyebrow">01 / Kursy</p>
+              <h2 id="kursy-title">Wybierz kurs. Resztę zrobi fala.</h2>
+            </div>
+            <p class="section__intro">
+              Od pierwszego paddle do świadomego wyboru fali. Teoria jest krótka, praktyka długa,
+              a grupa zawsze mała.
+            </p>
+          </header>
+
+          <div class="courses__grid">
+            <article class="card card--dark" data-reveal>
+              <div class="card__top">
+                <span class="card__index">01</span>
+                <span class="card__tag">Dla debiutantów</span>
+              </div>
+              <div>
+                <h3 class="card__title">Start w wodzie</h3>
+                <p class="card__desc">
+                  Dwa dni, po dwóch godzinach w wodzie. Wystarczy, żeby wstać na desce i zrozumieć,
+                  skąd bierze się fala.
+                </p>
+              </div>
+              <ul class="card__meta list-reset" role="list">
+                <li>2 dni</li>
+                <li>2 × 2 h</li>
+                <li>grupa do 6</li>
+              </ul>
+              <ul class="card__list list-reset" role="list">
+                <li>Deska miękka, pianka 5/4 i leash</li>
+                <li>Teoria na piasku i ubezpieczenie</li>
+                <li>Instruktor w wodzie przy grupie</li>
+              </ul>
+              <div class="card__price">
+                <span class="card__amount">480 zł</span>
+                <span class="card__price-note">za osobę / 2 dni</span>
+              </div>
+              <a class="btn btn--primary card__cta" href="#terminy">Wybierz Start w wodzie</a>
+            </article>
+
+            <article class="card" data-reveal style="--reveal-delay: 80ms">
+              <div class="card__top">
+                <span class="card__index">02</span>
+                <span class="card__tag">Kontynuacja</span>
+              </div>
+              <div>
+                <h3 class="card__title">Dłużej na fali</h3>
+                <p class="card__desc">
+                  Cztery spotkania dla tych, którzy już złapali kilka fal. Pracujemy nad paddle,
+                  take-offem i wyborem miejsca w wodzie.
+                </p>
+              </div>
+              <ul class="card__meta list-reset" role="list">
+                <li>4 spotkania</li>
+                <li>2 h</li>
+                <li>grupa do 5</li>
+              </ul>
+              <ul class="card__list list-reset" role="list">
+                <li>Deska dobrana do poziomu</li>
+                <li>Praca nad rytmem i pozycją</li>
+                <li>Analiza sesji na brzegu</li>
+              </ul>
+              <div class="card__price">
+                <span class="card__amount">760 zł</span>
+                <span class="card__price-note">za osobę / 4 spotkania</span>
+              </div>
+              <a class="btn btn--outline card__cta" href="#terminy">Wybierz Dłużej na fali</a>
+            </article>
+
+            <article class="card" data-reveal>
+              <div class="card__top">
+                <span class="card__index">03</span>
+                <span class="card__tag">Indywidualnie</span>
+              </div>
+              <div>
+                <h3 class="card__title">Prywatnie</h3>
+                <p class="card__desc">
+                  Trzy kwadranse w wodzie w tempie, które działa dla Ciebie. Sam albo w duecie.
+                  Bez dopasowywania się do grupy.
+                </p>
+              </div>
+              <ul class="card__meta list-reset" role="list">
+                <li>90 min</li>
+                <li>1 lub 2 osoby</li>
+                <li>termin do ustalenia</li>
+              </ul>
+              <ul class="card__list list-reset" role="list">
+                <li>Plan sesji pod Twój poziom</li>
+                <li>Sprzęt i ubezpieczenie w cenie</li>
+                <li>Możliwość własnej deski</li>
+              </ul>
+              <div class="card__price">
+                <span class="card__amount">320 zł</span>
+                <span class="card__price-note">za sesję / 1–2 osoby</span>
+              </div>
+              <a class="btn btn--outline card__cta" href="#terminy">Zarezerwuj sesję prywatną</a>
+            </article>
+
+            <article class="card" data-reveal style="--reveal-delay: 80ms">
+              <div class="card__top">
+                <span class="card__index">04</span>
+                <span class="card__tag">Weekend</span>
+              </div>
+              <div>
+                <h3 class="card__title">Obóz Barrel</h3>
+                <p class="card__desc">
+                  Trzy dni w Wydmowie, dwie sesje dziennie i teoria przy kawie. Dla osób, które
+                  chcą wejść w rytm wody bez rozpraszaczy.
+                </p>
+              </div>
+              <ul class="card__meta list-reset" role="list">
+                <li>3 dni</li>
+                <li>6 sesji</li>
+                <li>grupa do 8</li>
+              </ul>
+              <ul class="card__list list-reset" role="list">
+                <li>Nocleg i śniadania w bazie</li>
+                <li>Sprzęt, ubezpieczenie i teoria wideo</li>
+                <li>Elastyczny plan pod prognozę</li>
+              </ul>
+              <div class="card__price">
+                <span class="card__amount">1 890 zł</span>
+                <span class="card__price-note">za osobę / 3 dni</span>
+              </div>
+              <a class="btn btn--outline card__cta" href="#terminy">Zapytaj o obóz</a>
+            </article>
+          </div>
+
+          <div class="courses__note" data-reveal>
+            <p>
+              Ceny zawierają sprzęt, ubezpieczenie i piankę. Nie doliczamy „opłaty za wodę” ani
+              kaucji za deskę.
+            </p>
+            <p class="demo-badge">Ceny fikcyjne</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section class="section process" id="jak" aria-labelledby="jak-title">
+        <div class="container">
+          <header class="section__head" data-reveal>
+            <p class="eyebrow">02 / Jak to działa</p>
+            <h2 id="jak-title">Od brzegu do pierwszego barrela.</h2>
+            <p class="section__intro">
+              Bez wielogodzinnych wykładów. Cztery kroki, po których jesteś w wodzie i wiesz,
+              co robić.
+            </p>
+          </header>
+
+          <div class="process__layout">
+            <figure class="process__media" data-reveal>
+              <picture class="process__picture">
+                <source
+                  type="image/avif"
+                  srcset="
+                    assets/img/paddling-480.avif   480w,
+                    assets/img/paddling-800.avif   800w,
+                    assets/img/paddling-1200.avif 1200w,
+                    assets/img/paddling-1600.avif 1600w
+                  "
+                  sizes="(min-width: 820px) 40vw, 100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    assets/img/paddling-480.webp   480w,
+                    assets/img/paddling-800.webp   800w,
+                    assets/img/paddling-1200.webp 1200w,
+                    assets/img/paddling-1600.webp 1600w
+                  "
+                  sizes="(min-width: 820px) 40vw, 100vw"
+                />
+                <img
+                  class="process__image"
+                  src="assets/img/paddling-1200.jpg"
+                  srcset="
+                    assets/img/paddling-480.jpg   480w,
+                    assets/img/paddling-800.jpg   800w,
+                    assets/img/paddling-1200.jpg 1200w,
+                    assets/img/paddling-1600.jpg 1600w
+                  "
+                  sizes="(min-width: 820px) 40vw, 100vw"
+                  width="7200"
+                  height="9000"
+                  alt="Surfer leży na desce i wiosłuje przez spienioną wodę, widziany z góry"
+                  loading="lazy"
+                />
+              </picture>
+              <figcaption class="process__caption">
+                <span>Ławica, Wydmowo</span>
+                <span>Paddle before barrel</span>
+              </figcaption>
+            </figure>
+
+            <ol class="process__steps list-reset" role="list">
+              <li class="process__step" data-reveal>
+                <span class="process__num" aria-hidden="true">01</span>
+                <div>
+                  <h3>Rezerwujesz termin</h3>
+                  <p>
+                    Wybierasz kurs i weekend. Dostajesz maila z potwierdzeniem, godziną zbiórki
+                    i krótką listą rzeczy do zabrania.
+                  </p>
+                </div>
+              </li>
+              <li class="process__step" data-reveal>
+                <span class="process__num" aria-hidden="true">02</span>
+                <div>
+                  <h3>Zbiórka w bazie</h3>
+                  <p>
+                    Spotykamy się 20 minut przed startem przy ul. Morskiej 7. Wydajemy pianki,
+                    deski i dopasowujemy sprzęt do warunków.
+                  </p>
+                </div>
+              </li>
+              <li class="process__step" data-reveal>
+                <span class="process__num" aria-hidden="true">03</span>
+                <div>
+                  <h3>Rozgrzewka i teoria na piasku</h3>
+                  <p>
+                    Piętnaście minut o prądach, pozycji na desce i sygnałach. Pokazujemy, gdzie
+                    wchodzić i jak czytać Ławicę.
+                  </p>
+                </div>
+              </li>
+              <li class="process__step" data-reveal>
+                <span class="process__num" aria-hidden="true">04</span>
+                <div>
+                  <h3>Wchodzimy do wody</h3>
+                  <p>
+                    Instruktor prowadzi grupę. Pierwsze paddle, pierwszy take-off, pierwszy
+                    barrel. Wracasz na brzeg z konkretnym zadaniem na następną sesję.
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY -->
+      <section class="section section--dark why" id="dlaczego" aria-labelledby="dlaczego-title">
+        <div class="container">
+          <header class="section__head section__head--split" data-reveal>
+            <div>
+              <p class="eyebrow">03 / Dlaczego Barrel</p>
+              <h2 id="dlaczego-title">Mniej show. Więcej wody.</h2>
+            </div>
+            <p class="section__intro">
+              Nie sprzedajemy wakacyjnej bajki. Uczymy surfować w realnych warunkach Bałtyku,
+              z ludźmi, którzy robią to na co dzień.
+            </p>
+          </header>
+
+          <div class="why__grid">
+            <article class="why__item" data-reveal>
+              <span class="why__num" aria-hidden="true">01</span>
+              <h3>Instruktor w wodzie</h3>
+              <p>
+                Każdy prowadzący ma certyfikat instruktorski i ratowniczy. Jest obok grupy,
+                nie na brzegu z megafonem.
+              </p>
+            </article>
+            <article class="why__item" data-reveal>
+              <span class="why__num" aria-hidden="true">02</span>
+              <h3>Grupa, którą widzisz</h3>
+              <p>
+                Maksymalnie 6 osób na instruktora. Na kursie kontynuacyjnym 5. Nikt nie czeka
+                w kolejce do fali.
+              </p>
+            </article>
+            <article class="why__item" data-reveal>
+              <span class="why__num" aria-hidden="true">03</span>
+              <h3>Sprzęt bez dopłat</h3>
+              <p>
+                Miękkie deski, pianki 5/4, leash i ubezpieczenie są w cenie. Nie dokupujesz
+                niczego na miejscu.
+              </p>
+            </article>
+            <article class="why__item" data-reveal>
+              <span class="why__num" aria-hidden="true">04</span>
+              <h3>Bezpieczeństwo bez improwizacji</h3>
+              <p>
+                Sprawdzamy prognozę, prądy i dno. Przy złej pogodzie przekładamy termin,
+                zamiast wchodzić do wody na siłę.
+              </p>
+            </article>
+          </div>
+
+          <p class="why__quote" data-reveal>
+            „Barrel to nie cel. To moment, w którym <span>przestajesz walczyć z falą</span>.”
+          </p>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section class="section gallery" id="galeria" aria-labelledby="galeria-title">
+        <div class="container">
+          <header class="section__head section__head--split" data-reveal>
+            <div>
+              <p class="eyebrow">04 / Galeria</p>
+              <h2 id="galeria-title">Z wody, nie z folderu.</h2>
+            </div>
+            <p class="section__intro">
+              Zdjęcia z sesji, zbiórek i dni, w których Bałtyk był łaskawy. Kliknij, żeby zobaczyć
+              więcej.
+            </p>
+          </header>
+
+          <div class="gallery__grid">
+            <button
+              class="gallery__item"
+              type="button"
+              data-gallery-item
+              data-full="assets/img/grupa-na-fali-1600.webp"
+              data-caption="Grupa na Ławicy, lipiec."
+              data-alt="Trzej surferzy stoją na deskach w turkusowej, spienionej wodzie, widziani z góry"
+              aria-haspopup="dialog"
+              data-reveal
+            >
+              <picture class="gallery__picture">
+                <source
+                  type="image/avif"
+                  srcset="
+                    assets/img/grupa-na-fali-480.avif   480w,
+                    assets/img/grupa-na-fali-800.avif   800w,
+                    assets/img/grupa-na-fali-1200.avif 1200w,
+                    assets/img/grupa-na-fali-1600.avif 1600w,
+                    assets/img/grupa-na-fali-2000.avif 2000w
+                  "
+                  sizes="(min-width: 760px) 48vw, 100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    assets/img/grupa-na-fali-480.webp   480w,
+                    assets/img/grupa-na-fali-800.webp   800w,
+                    assets/img/grupa-na-fali-1200.webp 1200w,
+                    assets/img/grupa-na-fali-1600.webp 1600w,
+                    assets/img/grupa-na-fali-2000.webp 2000w
+                  "
+                  sizes="(min-width: 760px) 48vw, 100vw"
+                />
+                <img
+                  class="gallery__image"
+                  src="assets/img/grupa-na-fali-1200.jpg"
+                  srcset="
+                    assets/img/grupa-na-fali-480.jpg   480w,
+                    assets/img/grupa-na-fali-800.jpg   800w,
+                    assets/img/grupa-na-fali-1200.jpg 1200w,
+                    assets/img/grupa-na-fali-1600.jpg 1600w,
+                    assets/img/grupa-na-fali-2000.jpg 2000w
+                  "
+                  sizes="(min-width: 760px) 48vw, 100vw"
+                  width="4500"
+                  height="4500"
+                  alt="Trzej surferzy w turkusowej wodzie, ujęcie lotnicze"
+                  loading="lazy"
+                />
+              </picture>
+              <span class="gallery__caption">
+                Grupa na Ławicy, lipiec.
+                <span class="gallery__expand" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none">
+                    <path d="M6 2H2V6M10 2H14V6M14 10V14H10M6 14H2V10" stroke="currentColor" stroke-width="1.3" />
+                  </svg>
+                </span>
+              </span>
+            </button>
+
+            <button
+              class="gallery__item"
+              type="button"
+              data-gallery-item
+              data-full="assets/img/surferka-na-plazy-1200.webp"
+              data-caption="Po sesji. Deska pod pachą, sól na skórze."
+              data-alt="Uśmiechnięta surferka biegnie brzegiem morza z deską pod pachą"
+              aria-haspopup="dialog"
+              data-reveal
+              style="--reveal-delay: 60ms"
+            >
+              <picture class="gallery__picture">
+                <source
+                  type="image/avif"
+                  srcset="
+                    assets/img/surferka-na-plazy-480.avif   480w,
+                    assets/img/surferka-na-plazy-800.avif   800w,
+                    assets/img/surferka-na-plazy-1200.avif 1200w,
+                    assets/img/surferka-na-plazy-1600.avif 1600w,
+                    assets/img/surferka-na-plazy-2000.avif 2000w
+                  "
+                  sizes="(min-width: 760px) 24vw, 50vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    assets/img/surferka-na-plazy-480.webp   480w,
+                    assets/img/surferka-na-plazy-800.webp   800w,
+                    assets/img/surferka-na-plazy-1200.webp 1200w,
+                    assets/img/surferka-na-plazy-1600.webp 1600w,
+                    assets/img/surferka-na-plazy-2000.webp 2000w
+                  "
+                  sizes="(min-width: 760px) 24vw, 50vw"
+                />
+                <img
+                  class="gallery__image"
+                  src="assets/img/surferka-na-plazy-800.jpg"
+                  srcset="
+                    assets/img/surferka-na-plazy-480.jpg   480w,
+                    assets/img/surferka-na-plazy-800.jpg   800w,
+                    assets/img/surferka-na-plazy-1200.jpg 1200w,
+                    assets/img/surferka-na-plazy-1600.jpg 1600w,
+                    assets/img/surferka-na-plazy-2000.jpg 2000w
+                  "
+                  sizes="(min-width: 760px) 24vw, 50vw"
+                  width="3456"
+                  height="5184"
+                  alt="Surferka biegnie brzegiem morza z deską surfingową pod pachą"
+                  loading="lazy"
+                />
+              </picture>
+              <span class="gallery__caption">
+                Po sesji. Sól na skórze.
+                <span class="gallery__expand" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none">
+                    <path d="M6 2H2V6M10 2H14V6M14 10V14H10M6 14H2V10" stroke="currentColor" stroke-width="1.3" />
+                  </svg>
+                </span>
+              </span>
+            </button>
+
+            <button
+              class="gallery__item"
+              type="button"
+              data-gallery-item
+              data-full="assets/img/paddling-1600.webp"
+              data-caption="Paddle. Najważniejszy ruch w surfingu."
+              data-alt="Surfer wiosłuje na desce przez spienioną, turkusową wodę, widziany z góry"
+              aria-haspopup="dialog"
+              data-reveal
+              style="--reveal-delay: 120ms"
+            >
+              <picture class="gallery__picture">
+                <source
+                  type="image/avif"
+                  srcset="
+                    assets/img/paddling-480.avif   480w,
+                    assets/img/paddling-800.avif   800w,
+                    assets/img/paddling-1200.avif 1200w,
+                    assets/img/paddling-1600.avif 1600w,
+                    assets/img/paddling-2000.avif 2000w
+                  "
+                  sizes="(min-width: 760px) 24vw, 50vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    assets/img/paddling-480.webp   480w,
+                    assets/img/paddling-800.webp   800w,
+                    assets/img/paddling-1200.webp 1200w,
+                    assets/img/paddling-1600.webp 1600w,
+                    assets/img/paddling-2000.webp 2000w
+                  "
+                  sizes="(min-width: 760px) 24vw, 50vw"
+                />
+                <img
+                  class="gallery__image"
+                  src="assets/img/paddling-800.jpg"
+                  srcset="
+                    assets/img/paddling-480.jpg   480w,
+                    assets/img/paddling-800.jpg   800w,
+                    assets/img/paddling-1200.jpg 1200w,
+                    assets/img/paddling-1600.jpg 1600w,
+                    assets/img/paddling-2000.jpg 2000w
+                  "
+                  sizes="(min-width: 760px) 24vw, 50vw"
+                  width="7200"
+                  height="9000"
+                  alt="Surfer wiosłuje na desce w spienionej wodzie, widziany z góry"
+                  loading="lazy"
+                />
+              </picture>
+              <span class="gallery__caption">
+                Paddle. Najważniejszy ruch.
+                <span class="gallery__expand" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none">
+                    <path d="M6 2H2V6M10 2H14V6M14 10V14H10M6 14H2V10" stroke="currentColor" stroke-width="1.3" />
+                  </svg>
+                </span>
+              </span>
+            </button>
+
+            <button
+              class="gallery__item"
+              type="button"
+              data-gallery-item
+              data-full="assets/img/lekcja-przy-brzegu-1600.webp"
+              data-caption="Zbiórka przed wejściem do wody."
+              data-alt="Grupa osób uczy się surfować na falach przy brzegu, w tle statki na horyzoncie"
+              aria-haspopup="dialog"
+              data-reveal
+            >
+              <picture class="gallery__picture">
+                <source
+                  type="image/avif"
+                  srcset="
+                    assets/img/lekcja-przy-brzegu-480.avif   480w,
+                    assets/img/lekcja-przy-brzegu-800.avif   800w,
+                    assets/img/lekcja-przy-brzegu-1200.avif 1200w,
+                    assets/img/lekcja-przy-brzegu-1600.avif 1600w,
+                    assets/img/lekcja-przy-brzegu-2000.avif 2000w
+                  "
+                  sizes="(min-width: 760px) 58vw, 100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    assets/img/lekcja-przy-brzegu-480.webp   480w,
+                    assets/img/lekcja-przy-brzegu-800.webp   800w,
+                    assets/img/lekcja-przy-brzegu-1200.webp 1200w,
+                    assets/img/lekcja-przy-brzegu-1600.webp 1600w,
+                    assets/img/lekcja-przy-brzegu-2000.webp 2000w
+                  "
+                  sizes="(min-width: 760px) 58vw, 100vw"
+                />
+                <img
+                  class="gallery__image"
+                  src="assets/img/lekcja-przy-brzegu-1200.jpg"
+                  srcset="
+                    assets/img/lekcja-przy-brzegu-480.jpg   480w,
+                    assets/img/lekcja-przy-brzegu-800.jpg   800w,
+                    assets/img/lekcja-przy-brzegu-1200.jpg 1200w,
+                    assets/img/lekcja-przy-brzegu-1600.jpg 1600w,
+                    assets/img/lekcja-przy-brzegu-2000.jpg 2000w
+                  "
+                  sizes="(min-width: 760px) 58vw, 100vw"
+                  width="5548"
+                  height="3699"
+                  alt="Uczestnicy kursu surfingu w wodzie przy brzegu, w tle statki na horyzoncie"
+                  loading="lazy"
+                />
+              </picture>
+              <span class="gallery__caption">
+                Zbiórka przed wejściem.
+                <span class="gallery__expand" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none">
+                    <path d="M6 2H2V6M10 2H14V6M14 10V14H10M6 14H2V10" stroke="currentColor" stroke-width="1.3" />
+                  </svg>
+                </span>
+              </span>
+            </button>
+
+            <button
+              class="gallery__item"
+              type="button"
+              data-gallery-item
+              data-full="assets/img/surfer-w-barrelu-1600.webp"
+              data-caption="Barrel. Ten moment, dla którego wracamy."
+              data-alt="Surfer jedzie w tubie dużej, turkusowej fali"
+              aria-haspopup="dialog"
+              data-reveal
+              style="--reveal-delay: 60ms"
+            >
+              <picture class="gallery__picture">
+                <source
+                  type="image/avif"
+                  srcset="
+                    assets/img/surfer-w-barrelu-480.avif   480w,
+                    assets/img/surfer-w-barrelu-800.avif   800w,
+                    assets/img/surfer-w-barrelu-1200.avif 1200w,
+                    assets/img/surfer-w-barrelu-1600.avif 1600w,
+                    assets/img/surfer-w-barrelu-2000.avif 2000w
+                  "
+                  sizes="(min-width: 760px) 40vw, 100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    assets/img/surfer-w-barrelu-480.webp   480w,
+                    assets/img/surfer-w-barrelu-800.webp   800w,
+                    assets/img/surfer-w-barrelu-1200.webp 1200w,
+                    assets/img/surfer-w-barrelu-1600.webp 1600w,
+                    assets/img/surfer-w-barrelu-2000.webp 2000w
+                  "
+                  sizes="(min-width: 760px) 40vw, 100vw"
+                />
+                <img
+                  class="gallery__image"
+                  src="assets/img/surfer-w-barrelu-1200.jpg"
+                  srcset="
+                    assets/img/surfer-w-barrelu-480.jpg   480w,
+                    assets/img/surfer-w-barrelu-800.jpg   800w,
+                    assets/img/surfer-w-barrelu-1200.jpg 1200w,
+                    assets/img/surfer-w-barrelu-1600.jpg 1600w,
+                    assets/img/surfer-w-barrelu-2000.jpg 2000w
+                  "
+                  sizes="(min-width: 760px) 40vw, 100vw"
+                  width="5100"
+                  height="3400"
+                  alt="Surfer w tubie fali, ujęcie z poziomu wody"
+                  loading="lazy"
+                />
+              </picture>
+              <span class="gallery__caption">
+                Barrel. Ten moment.
+                <span class="gallery__expand" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none">
+                    <path d="M6 2H2V6M10 2H14V6M14 10V14H10M6 14H2V10" stroke="currentColor" stroke-width="1.3" />
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </div>
+
+          <p class="gallery__note">Zdjęcia: Pexels. Kadry z sesji w Wydmowie — miejscowość fikcyjna.</p>
+        </div>
+      </section>
+
+      <!-- BOOKING -->
+      <section class="section booking" id="terminy" aria-labelledby="terminy-title">
+        <div class="container">
+          <header class="section__head section__head--split" data-reveal>
+            <div>
+              <p class="eyebrow">05 / Terminy</p>
+              <h2 id="terminy-title">Wybierz weekend w Wydmowie.</h2>
+            </div>
+            <p class="section__intro">
+              Sezon 2027. Kalendarz, formularz i potwierdzenie to makieta. Nic nie zostanie
+              wysłane ani zapisane.
+            </p>
+          </header>
+
+          <p class="demo-note" data-reveal>
+            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5" />
+              <path d="M10 6V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              <circle cx="10" cy="14" r="1" fill="currentColor" />
+            </svg>
+            <span>
+              <strong>To demo.</strong> Formularz nie wysyła danych. W wybranym terminie nie
+              zostanie zrobiona żadna rezerwacja.
+            </span>
+          </p>
+
+          <div class="booking__layout">
+            <div class="booking__left" data-reveal>
+              <div class="calendar">
+                <div class="calendar__head">
+                  <span class="calendar__month">Lipiec 2027</span>
+                  <span class="calendar__legend">wolny termin</span>
+                </div>
+                <div class="calendar__weekdays" aria-hidden="true">
+                  <span>Pn</span><span>Wt</span><span>Śr</span><span>Cz</span><span>Pt</span
+                  ><span>So</span><span>Nd</span>
+                </div>
+                <div class="calendar__grid" role="group" aria-label="Kalendarz terminów, lipiec 2027">
+                  <span class="calendar__day is-empty" aria-hidden="true"></span>
+                  <span class="calendar__day is-empty" aria-hidden="true"></span>
+                  <span class="calendar__day is-empty" aria-hidden="true"></span>
+                  <span class="calendar__day" aria-hidden="true">1</span>
+                  <span class="calendar__day" aria-hidden="true">2</span>
+                  <span class="calendar__day" aria-hidden="true">3</span>
+                  <span class="calendar__day" aria-hidden="true">4</span>
+                  <span class="calendar__day" aria-hidden="true">5</span>
+                  <span class="calendar__day" aria-hidden="true">6</span>
+                  <span class="calendar__day" aria-hidden="true">7</span>
+                  <span class="calendar__day" aria-hidden="true">8</span>
+                  <span class="calendar__day" aria-hidden="true">9</span>
+                  <button
+                    class="calendar__day is-available"
+                    type="button"
+                    data-date-start="10"
+                    aria-pressed="false"
+                    aria-label="10–11 lipca 2027, wolny termin"
+                  >
+                    10
+                  </button>
+                  <button
+                    class="calendar__day is-available"
+                    type="button"
+                    data-date-start="10"
+                    aria-pressed="false"
+                    aria-label="10–11 lipca 2027, wolny termin"
+                  >
+                    11
+                  </button>
+                  <span class="calendar__day" aria-hidden="true">12</span>
+                  <span class="calendar__day" aria-hidden="true">13</span>
+                  <span class="calendar__day" aria-hidden="true">14</span>
+                  <span class="calendar__day" aria-hidden="true">15</span>
+                  <span class="calendar__day" aria-hidden="true">16</span>
+                  <button
+                    class="calendar__day is-available"
+                    type="button"
+                    data-date-start="17"
+                    aria-pressed="false"
+                    aria-label="17–18 lipca 2027, wolny termin"
+                  >
+                    17
+                  </button>
+                  <button
+                    class="calendar__day is-available"
+                    type="button"
+                    data-date-start="17"
+                    aria-pressed="false"
+                    aria-label="17–18 lipca 2027, wolny termin"
+                  >
+                    18
+                  </button>
+                  <span class="calendar__day" aria-hidden="true">19</span>
+                  <span class="calendar__day" aria-hidden="true">20</span>
+                  <span class="calendar__day" aria-hidden="true">21</span>
+                  <span class="calendar__day" aria-hidden="true">22</span>
+                  <span class="calendar__day" aria-hidden="true">23</span>
+                  <button
+                    class="calendar__day is-available"
+                    type="button"
+                    data-date-start="24"
+                    aria-pressed="false"
+                    aria-label="24–25 lipca 2027, wolny termin"
+                  >
+                    24
+                  </button>
+                  <button
+                    class="calendar__day is-available"
+                    type="button"
+                    data-date-start="24"
+                    aria-pressed="false"
+                    aria-label="24–25 lipca 2027, wolny termin"
+                  >
+                    25
+                  </button>
+                  <span class="calendar__day" aria-hidden="true">26</span>
+                  <span class="calendar__day" aria-hidden="true">27</span>
+                  <span class="calendar__day" aria-hidden="true">28</span>
+                  <span class="calendar__day" aria-hidden="true">29</span>
+                  <span class="calendar__day" aria-hidden="true">30</span>
+                  <span class="calendar__day" aria-hidden="true">31</span>
+                  <span class="calendar__day is-empty" aria-hidden="true"></span>
+                </div>
+                <p class="calendar__hint">Wybierz dzień rozpoczęcia kursu. Weekend trwa dwa dni.</p>
+                <p class="calendar__selection" id="calendar-selection">
+                  Nie wybrano jeszcze terminu.
+                </p>
+              </div>
+
+              <div class="demo-note">
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="1.6" />
+                </svg>
+                <span>Terminy, ceny i dostępność są fikcyjne. To element projektu koncepcyjnego.</span>
+              </div>
+            </div>
+
+            <div class="booking__form" data-reveal style="--reveal-delay: 80ms">
+              <h3>Zgłoszenie na kurs</h3>
+              <p>Wypełnij pola — to makieta, więc możesz wpisać dowolne dane.</p>
+
+              <form class="form-grid" id="booking-form" novalidate>
+                <input type="hidden" name="termin" id="booking-date" value="" />
+                <div class="field">
+                  <label for="name">Imię i nazwisko</label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    autocomplete="name"
+                    placeholder="Np. Anna Kowalska"
+                    required
+                  />
+                </div>
+
+                <div class="field--row">
+                  <div class="field">
+                    <label for="email">E-mail</label>
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      autocomplete="email"
+                      placeholder="anna@example.com"
+                      required
+                    />
+                  </div>
+                  <div class="field">
+                    <label for="phone">Telefon <span class="form-note">(opcjonalnie)</span></label>
+                    <input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      autocomplete="tel"
+                      placeholder="+48 000 000 000"
+                    />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="course">Kurs</label>
+                  <select id="course" name="course">
+                    <option>Start w wodzie — 480 zł</option>
+                    <option>Dłużej na fali — 760 zł</option>
+                    <option>Prywatnie — 320 zł</option>
+                    <option>Obóz Barrel — 1 890 zł</option>
+                  </select>
+                </div>
+
+                <div class="field--row">
+                  <div class="field">
+                    <label for="level">Poziom</label>
+                    <select id="level" name="level">
+                      <option>Pierwszy raz na desce</option>
+                      <option>Wracam do wody</option>
+                      <option>Mam doświadczenie</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="people">Liczba osób</label>
+                    <select id="people" name="people">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                    </select>
+                  </div>
+                </div>
+
+                <label class="check">
+                  <input type="checkbox" name="consent" required />
+                  <span>
+                    Akceptuję regulamin i politykę prywatności. Wiem, że to projekt demo i dane nie
+                    zostaną wysłane.
+                  </span>
+                </label>
+
+                <p class="form-note">
+                  Formularz jest makietą front-endową. Nie wysyła danych i nie łączy się z żadnym
+                  systemem rezerwacji.
+                </p>
+
+                <noscript>
+                  <p class="form-note">
+                    Formularz demo wymaga JavaScriptu. Kalendarz i terminy pozostają widoczne
+                    powyżej.
+                  </p>
+                </noscript>
+
+                <button class="btn btn--primary btn--block" type="submit">Wyślij zgłoszenie (demo)</button>
+                <div class="form-status" id="booking-status" role="status" hidden></div>
+              </form>
+
+              <p class="booking__contact">
+                Wolisz zapytać najpierw?
+                <a href="mailto:hello@barrel.example">hello@barrel.example</a>
+                <span>Telefon fikcyjny: +48 58 000 00 00</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRACTICAL INFO -->
+      <section class="section info" id="info" aria-labelledby="info-title">
+        <div class="container">
+          <header class="section__head section__head--split" data-reveal>
+            <div>
+              <p class="eyebrow">06 / Praktycznie</p>
+              <h2 id="info-title">Zanim wejdziesz do wody.</h2>
+            </div>
+            <p class="section__intro">
+              Baza jest blisko plaży, sprzęt czeka na miejscu, a przy złej pogodzie nie udajemy
+              bohaterów.
+            </p>
+          </header>
+
+          <div class="info__grid">
+            <div class="info__map-card" data-reveal>
+              <div class="info__map" aria-hidden="true">
+                <svg viewBox="0 0 600 430" preserveAspectRatio="xMidYMid slice">
+                  <defs>
+                    <pattern id="map-grid" width="36" height="36" patternUnits="userSpaceOnUse">
+                      <path d="M36 0H0V36" fill="none" stroke="rgba(247,245,239,0.08)" stroke-width="1" />
+                    </pattern>
+                  </defs>
+                  <rect width="600" height="430" fill="url(#map-grid)" />
+                  <path
+                    d="M0 300C90 280 150 292 210 278C280 262 318 218 376 224C438 231 470 268 600 250V430H0Z"
+                    fill="rgba(8,22,31,0.5)"
+                  />
+                  <path
+                    d="M0 300C90 280 150 292 210 278C280 262 318 218 376 224C438 231 470 268 600 250"
+                    fill="none"
+                    stroke="#F7E6C4"
+                    stroke-width="2.5"
+                  />
+                  <path
+                    d="M-20 196C82 206 146 185 216 172C298 158 360 164 432 182C492 197 548 186 620 164"
+                    fill="none"
+                    stroke="rgba(247,245,239,0.28)"
+                    stroke-width="1.2"
+                    stroke-dasharray="6 8"
+                  />
+                  <path
+                    d="M-10 348C90 322 166 334 232 312C302 289 374 300 436 318C500 337 548 324 610 300"
+                    fill="none"
+                    stroke="rgba(247,245,239,0.18)"
+                    stroke-width="1.2"
+                  />
+                  <path
+                    d="M124 430C132 382 144 344 168 300C190 260 218 246 256 232"
+                    fill="none"
+                    stroke="rgba(247,230,196,0.4)"
+                    stroke-width="1.4"
+                  />
+                  <path
+                    d="M330 430C326 380 332 338 354 302C376 266 396 252 420 236"
+                    fill="none"
+                    stroke="rgba(247,230,196,0.28)"
+                    stroke-width="1.2"
+                  />
+                  <circle cx="352" cy="286" r="34" fill="rgba(238,143,90,0.16)" />
+                </svg>
+                <span class="map__label map__label--town">Wydmowo</span>
+                <span class="map__label map__label--base">Baza Barrel</span>
+                <span class="map__pin"></span>
+              </div>
+              <div class="info__map-caption">
+                <strong>Mapa poglądowa — lokalizacja fikcyjna</strong>
+                <span>ul. Morska 7, 84-150 Wydmowo</span>
+              </div>
+            </div>
+
+            <div class="info__cards">
+              <article class="info__card" data-reveal>
+                <h3>Dojazd</h3>
+                <p>
+                  Pociąg z Gdyni do Wydmowa, potem 8 minut pieszo na plażę. Samochodem:
+                  parking przy ul. Wydmowej, płatny w sezonie.
+                </p>
+              </article>
+              <article class="info__card" data-reveal style="--reveal-delay: 60ms">
+                <h3>Co zabrać</h3>
+                <ul class="list-reset" role="list">
+                  <li>Strój kąpielowy i ręcznik</li>
+                  <li>Krem z filtrem i butelka wody</li>
+                  <li>Ciepła bluza po sesji</li>
+                  <li>Piankę i deskę dostajesz od nas</li>
+                </ul>
+              </article>
+              <article class="info__card" data-reveal style="--reveal-delay: 120ms">
+                <h3>Zła pogoda</h3>
+                <p>
+                  Jeśli prognoza nie pozwala wejść do wody, przekładamy sesję na inny termin lub
+                  zwracamy wpłatę. Decyzję podajemy do 18:00 dzień wcześniej.
+                </p>
+              </article>
+              <article class="info__card" data-reveal style="--reveal-delay: 180ms">
+                <h3>Woda i sprzęt</h3>
+                <p>
+                  Bałtyk bywa zimny nawet w lipcu. Pływamy w piankach 5/4 mm, a deski dobieramy
+                  do poziomu i warunków. Wszystko jest w cenie kursu.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section faq" id="faq" aria-labelledby="faq-title">
+        <div class="container faq__layout">
+          <div class="faq__aside" data-reveal>
+            <p class="eyebrow">07 / FAQ</p>
+            <h2 id="faq-title">Pytania, które słyszymy najczęściej.</h2>
+            <p class="section__intro">
+              Krótko i konkretnie. Jeśli czegoś brakuje, napisz — odpowiadamy w godzinach pracy
+              bazy.
+            </p>
+            <p class="faq__contact">
+              <a class="text-link" href="mailto:hello@barrel.example">
+                hello@barrel.example
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M2 8H14M9 3L14 8L9 13" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+              </a>
+            </p>
+          </div>
+
+          <div class="faq-list" data-reveal>
+            <details class="faq-item">
+              <summary>Nigdy nie stałem na desce. Czy to dla mnie?</summary>
+              <div class="faq-item__answer">
+                <p>
+                  Tak. Kurs „Start w wodzie” zakłada zero doświadczenia. Pierwsze 20 minut
+                  spędzamy na piasku, potem wchodzimy w białe wody przy brzegu.
+                </p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Czy muszę dobrze pływać?</summary>
+              <div class="faq-item__answer">
+                <p>
+                  Wystarczy podstawowa umiejętność utrzymania się na wodzie. Pływamy blisko brzegu,
+                  w piankach, z instruktorem obok grupy.
+                </p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Ile osób jest w grupie?</summary>
+              <div class="faq-item__answer">
+                <p>
+                  Maksymalnie 6 osób na instruktora. Na kursie „Dłużej na fali” maksymalnie 5.
+                  Nie tworzymy dużych grup, w których nie da się nikogo dopilnować.
+                </p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Czy sprzęt jest w cenie?</summary>
+              <div class="faq-item__answer">
+                <p>
+                  Tak. Deska, pianka, leash i ubezpieczenie są w cenie kursu. Nie pobieramy też
+                  kaucji za sprzęt.
+                </p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Co, jeśli będzie zła pogoda?</summary>
+              <div class="faq-item__answer">
+                <p>
+                  Przekładamy sesję na inny termin lub zwracamy wpłatę. Decyzję ogłaszamy do 18:00
+                  dzień wcześniej. Bezpieczeństwo jest ważniejsze niż plan.
+                </p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Od jakiego wieku można dołączyć?</summary>
+              <div class="faq-item__answer">
+                <p>
+                  Od 12 lat z opiekunem, od 16 lat samodzielnie. Kursy prywatne i obozy ustalamy
+                  indywidualnie — napisz, zanim zarezerwujesz.
+                </p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Czy mogę przyjść z własną deską?</summary>
+              <div class="faq-item__answer">
+                <p>
+                  Tak, daj znać przy rezerwacji. Na pierwsze sesje polecamy jednak naszą miękką
+                  deskę — łatwiej złapać równowagę i mniej boli przy kontakcie z falą.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINAL CTA -->
+      <section class="section section--dark final" id="kontakt" aria-labelledby="kontakt-title">
+        <div class="final__media" aria-hidden="true">
+          <picture>
+            <source
+              type="image/avif"
+              srcset="
+                assets/img/surfer-w-barrelu-800.avif   800w,
+                assets/img/surfer-w-barrelu-1200.avif 1200w,
+                assets/img/surfer-w-barrelu-1600.avif 1600w,
+                assets/img/surfer-w-barrelu-2000.avif 2000w
+              "
+              sizes="100vw"
+            />
+            <source
+              type="image/webp"
+              srcset="
+                assets/img/surfer-w-barrelu-800.webp   800w,
+                assets/img/surfer-w-barrelu-1200.webp 1200w,
+                assets/img/surfer-w-barrelu-1600.webp 1600w,
+                assets/img/surfer-w-barrelu-2000.webp 2000w
+              "
+              sizes="100vw"
+            />
+            <img
+              class="final__image"
+              src="assets/img/surfer-w-barrelu-1600.jpg"
+              srcset="
+                assets/img/surfer-w-barrelu-800.jpg   800w,
+                assets/img/surfer-w-barrelu-1200.jpg 1200w,
+                assets/img/surfer-w-barrelu-1600.jpg 1600w,
+                assets/img/surfer-w-barrelu-2000.jpg 2000w
+              "
+              sizes="100vw"
+              width="5100"
+              height="3400"
+              alt=""
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div class="final__overlay" aria-hidden="true"></div>
+
+        <div class="container final__inner">
+          <div data-reveal>
+            <p class="eyebrow">Barrel / Wydmowo</p>
+            <h2 class="final__title" id="kontakt-title">
+              Zarezerwuj weekend.
+              <span>Fala zrobi resztę.</span>
+            </h2>
+            <p class="final__lead">
+              Mała grupa, sprzęt w cenie i instruktor w wodzie. Reszta to kwestia wejścia do wody.
+            </p>
+            <div class="final__actions">
+              <a class="btn btn--primary" href="#terminy">
+                Wybierz termin
+                <svg class="btn__icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M2 8H14M9 3L14 8L9 13" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+              </a>
+              <a class="btn btn--ghost" href="mailto:hello@barrel.example">Napisz do nas</a>
+            </div>
+          </div>
+
+          <dl class="final__contact" data-reveal style="--reveal-delay: 80ms">
+            <div>
+              <dt>Baza</dt>
+              <dd>ul. Morska 7, 84-150 Wydmowo</dd>
+            </div>
+            <div>
+              <dt>Kontakt</dt>
+              <dd><a href="mailto:hello@barrel.example">hello@barrel.example</a><br />+48 58 000 00 00</dd>
+            </div>
+            <div>
+              <dt>Social</dt>
+              <dd>@barrel.wydmowo <span class="form-note">(placeholder)</span></dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__grid">
+        <div class="site-footer__brand">
+          <a class="brand" href="#top" aria-label="Barrel — początek strony">
+            <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+              <defs>
+                <clipPath id="logo-clip-footer"><circle cx="38" cy="36" r="14" /></clipPath>
+              </defs>
+              <circle cx="32" cy="32" r="30" fill="var(--logo-outer)" />
+              <circle
+                cx="35.5"
+                cy="34.5"
+                r="23"
+                fill="var(--blue)"
+                stroke="var(--logo-ring)"
+                stroke-width="2.5"
+              />
+              <circle
+                cx="38"
+                cy="36"
+                r="14"
+                fill="var(--sand)"
+                stroke="var(--logo-ring)"
+                stroke-width="2.5"
+              />
+              <g clip-path="url(#logo-clip-footer)">
+                <circle cx="35" cy="31" r="3.6" fill="var(--coral)" />
+                <path d="M20 41C28 35 33 35 38 40C43 45 48 45 56 38V56H20Z" fill="var(--blue)" />
+              </g>
+            </svg>
+            <span class="brand__word" aria-hidden="true">Barrel</span>
+          </a>
+          <p class="site-footer__desc">
+            Fikcyjna szkoła surfingu na Półwyspie Helskim. Małe grupy, sprzęt w cenie i instruktor
+            w wodzie.
+          </p>
+        </div>
+
+        <nav aria-label="Stopka — nawigacja">
+          <h2 class="site-footer__heading">Na stronie</h2>
+          <div class="site-footer__links">
+            <a href="#kursy">Kursy</a>
+            <a href="#terminy">Terminy</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#faq">FAQ</a>
+            <a href="#kontakt">Kontakt</a>
+          </div>
+        </nav>
+
+        <div>
+          <h2 class="site-footer__heading">Informacje</h2>
+          <div class="site-footer__links">
+            <a href="#" aria-disabled="true">Regulamin (placeholder)</a>
+            <a href="#" aria-disabled="true">Polityka prywatności (placeholder)</a>
+            <a href="#" aria-disabled="true">Odwołania i pogoda (placeholder)</a>
+            <a href="#" aria-disabled="true">Instagram (placeholder)</a>
+            <a href="#" aria-disabled="true">Facebook (placeholder)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="site-footer__demo">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5" />
+            <path d="M10 6V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            <circle cx="10" cy="14" r="1" fill="currentColor" />
+          </svg>
+          <span>
+            <strong>Projekt koncepcyjny. Treści i dane są fikcyjne.</strong>
+            Wydmowo nie istnieje, ceny i terminy są wymyślone, a formularz nie wysyła danych.
+            Strona powstała jako koncept do portfolio.
+          </span>
+        </div>
+
+        <div class="site-footer__bottom">
+          <p>© 2027 Barrel — projekt koncepcyjny. Wszystkie prawa zastrzeżone.</p>
+          <p class="site-footer__credit">
+            Zdjęcia i wideo: Pexels (Jess Vide, Pok Rie, Sergio Hurtado). Fonty: Anton, DM Sans
+            (SIL Open Font License).
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <a class="mobile-cta" href="#terminy" id="mobile-cta" aria-label="Przejdź do rezerwacji">
+      <span class="mobile-cta__label">
+        Zarezerwuj
+        <span class="mobile-cta__hint">Wolne terminy: lipiec 2027</span>
+      </span>
+      <span class="mobile-cta__icon" aria-hidden="true">
+        <svg viewBox="0 0 16 16" fill="none">
+          <path d="M2 8H14M9 3L14 8L9 13" stroke="currentColor" stroke-width="1.5" />
+        </svg>
+      </span>
+    </a>
+
+    <dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-caption">
+      <div class="lightbox__bar">
+        <span class="lightbox__counter" id="lightbox-counter">1 / 5</span>
+        <button class="icon-btn" type="button" data-lightbox-close>
+          <svg viewBox="0 0 18 18" fill="none" aria-hidden="true">
+            <path d="M2 2L16 16M16 2L2 16" stroke="currentColor" stroke-width="1.5" />
+          </svg>
+          <span class="visually-hidden">Zamknij galerię</span>
+        </button>
+      </div>
+      <div class="lightbox__stage">
+        <button class="icon-btn lightbox__nav lightbox__nav--prev" type="button" data-lightbox-prev>
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M14 8H2M7 3L2 8L7 13" stroke="currentColor" stroke-width="1.5" />
+          </svg>
+          <span class="visually-hidden">Poprzednie zdjęcie</span>
+        </button>
+        <img class="lightbox__image" id="lightbox-image" src="assets/img/grupa-na-fali-480.webp" alt="" width="1600" height="1200" loading="lazy" decoding="async" />
+        <button class="icon-btn lightbox__nav lightbox__nav--next" type="button" data-lightbox-next>
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M2 8H14M9 3L14 8L9 13" stroke="currentColor" stroke-width="1.5" />
+          </svg>
+          <span class="visually-hidden">Następne zdjęcie</span>
+        </button>
+      </div>
+      <div class="lightbox__foot">
+        <p class="lightbox__caption" id="lightbox-caption"></p>
+      </div>
+    </dialog>
+
+  </body>
+</html>
