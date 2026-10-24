@@ -22,9 +22,9 @@ const IMAGE_MAP = {
 };
 
 const VIDEO_SOURCE = path.join(SOURCE_VIDEO, "13019460_3840_2160_25fps.mp4");
-const VIDEO_START = 1.0;
-const VIDEO_DURATION = 8;
-const POSTER_TIME = 6.4;
+const VIDEO_START = 6.5;
+const VIDEO_DURATION = 4.5;
+const POSTER_TIME = 6.5;
 
 function run(bin, args) {
   execFileSync(bin, args, { stdio: "inherit" });

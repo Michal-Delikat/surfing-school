@@ -1,33 +1,19 @@
 export function initHeroVideo() {
   const video = document.getElementById("hero-video");
-  const toggle = document.getElementById("video-toggle");
-  if (!video || !toggle) return;
+  if (!video) return;
 
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-  const mobile = window.matchMedia("(max-width: 899px)");
   const connection =
     navigator.connection || navigator.mozConnection || navigator.webkitConnection || null;
 
-  const pauseIcon = toggle.querySelector('[data-video-icon="pause"]');
-  const playIcon = toggle.querySelector('[data-video-icon="play"]');
-  const label = toggle.querySelector("[data-video-label]");
-
   let loaded = false;
-  let userPaused = false;
   let pausedByView = false;
 
   video.disablePictureInPicture = true;
   if ("disableRemotePlayback" in video) video.disableRemotePlayback = true;
 
-  const syncToggle = () => {
-    const playing = !video.paused && !video.ended;
-    if (pauseIcon) pauseIcon.hidden = !playing;
-    if (playIcon) playIcon.hidden = playing;
-    if (label) label.textContent = playing ? "Zatrzymaj tło" : "Włącz tło";
-  };
-
   const canLoad = () => {
-    if (reduceMotion.matches || mobile.matches) return false;
+    if (reduceMotion.matches) return false;
     if (connection && connection.saveData) return false;
     if (connection && ["slow-2g", "2g", "3g"].includes(connection.effectiveType)) {
       return false;
@@ -37,12 +23,10 @@ export function initHeroVideo() {
 
   const revealVideo = () => {
     video.classList.add("is-ready");
-    toggle.hidden = false;
-    syncToggle();
   };
 
   const startPlayback = () => {
-    if (!loaded || userPaused) return;
+    if (!loaded) return;
     const playPromise = video.play();
     if (playPromise) playPromise.catch(() => {});
   };
@@ -71,22 +55,8 @@ export function initHeroVideo() {
 
   video.addEventListener("canplay", revealVideo, { once: true });
   video.addEventListener("playing", revealVideo);
-  video.addEventListener("play", syncToggle);
-  video.addEventListener("pause", syncToggle);
   video.addEventListener("error", () => {
     video.classList.remove("is-ready");
-    toggle.hidden = true;
-  });
-
-  toggle.addEventListener("click", () => {
-    if (video.paused) {
-      userPaused = false;
-      pausedByView = false;
-      startPlayback();
-    } else {
-      userPaused = true;
-      video.pause();
-    }
   });
 
   const observer = new IntersectionObserver(
@@ -95,7 +65,7 @@ export function initHeroVideo() {
       if (!entry.isIntersecting && !video.paused) {
         pausedByView = true;
         video.pause();
-      } else if (entry.isIntersecting && pausedByView && !userPaused) {
+      } else if (entry.isIntersecting && pausedByView) {
         pausedByView = false;
         startPlayback();
       }
@@ -108,26 +78,12 @@ export function initHeroVideo() {
     if (event.matches) {
       video.pause();
       video.classList.remove("is-ready");
-      toggle.hidden = true;
     } else {
       if (!loaded) loadVideo();
       if (loaded) {
         video.classList.add("is-ready");
-        toggle.hidden = false;
         startPlayback();
       }
-    }
-  });
-
-  mobile.addEventListener("change", () => {
-    if (mobile.matches) {
-      video.pause();
-      video.classList.remove("is-ready");
-      toggle.hidden = true;
-    } else if (loaded) {
-      video.classList.add("is-ready");
-      toggle.hidden = false;
-      startPlayback();
     }
   });
 
