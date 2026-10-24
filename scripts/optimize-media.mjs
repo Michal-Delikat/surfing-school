@@ -1,5 +1,5 @@
 import { execFileSync } from "node:child_process";
-import { mkdir, readdir, stat, writeFile, copyFile } from "node:fs/promises";
+import { mkdir, readdir, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
 import sharp from "sharp";
 
@@ -176,13 +176,7 @@ async function buildOg(posterSrc) {
 }
 
 async function buildFavicons() {
-  const svg = path.join(ROOT, "assets/brand/favicon.svg");
-  const ico = path.join(ROOT, "assets/brand/favicon.ico");
-  const appleSource = path.join(ROOT, "assets/brand/apple-touch-icon.png");
-
-  await copyFile(svg, path.join(OUT_FAVICON, "favicon.svg"));
-  await copyFile(ico, path.join(OUT_FAVICON, "favicon.ico"));
-  await copyFile(appleSource, path.join(OUT_FAVICON, "apple-touch-icon.png"));
+  const svg = path.join(OUT_FAVICON, "favicon.svg");
 
   for (const size of [32, 192, 512]) {
     await sharp(svg, { density: 512 })
