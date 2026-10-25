@@ -7,9 +7,9 @@ export function initBooking() {
   if (!days.length || !selection || !dateInput || !form || !status) return;
 
   const labels = {
-    10: "10–11 lipca 2027",
-    17: "17–18 lipca 2027",
-    24: "24–25 lipca 2027",
+    10: "July 10, 2027",
+    17: "July 17, 2027",
+    24: "July 24, 2027",
   };
 
   let selectedStart = "";
@@ -21,8 +21,8 @@ export function initBooking() {
     const label = labels[start] || "";
     dateInput.value = label;
     selection.textContent = label
-      ? `Wybrany termin: ${label} · sobota–niedziela`
-      : "Nie wybrano jeszcze terminu.";
+      ? `Selected date: ${label}`
+      : "No date selected yet.";
 
     for (const day of days) {
       day.setAttribute("aria-pressed", String(day.dataset.dateStart === start));
@@ -44,20 +44,20 @@ export function initBooking() {
     event.preventDefault();
 
     if (!selectedStart) {
-      showStatus("Najpierw wybierz termin w kalendarzu. To tylko makieta, ale kolejność ma sens.", true);
+      showStatus("Pick a date in the calendar first. This is only a mock-up, but the order makes sense.", true);
       document.querySelector(".calendar")?.scrollIntoView({ block: "center", behavior: "smooth" });
       return;
     }
 
     if (!form.checkValidity()) {
       form.reportValidity();
-      showStatus("Uzupełnij wymagane pola i zaakceptuj regulamin (demo).", true);
+      showStatus("Complete the required fields and accept the terms (demo).", true);
       return;
     }
 
     const name = new FormData(form).get("name")?.toString().trim() || "";
     showStatus(
-      `Demo: dziękujemy${name ? `, ${name}` : ""}. Wybrany termin to ${labels[selectedStart]}. Nic nie zostało wysłane ani zapisane.`,
+      `Demo: thank you${name ? `, ${name}` : ""}. Your selected date is ${labels[selectedStart]}. Nothing was sent or saved.`,
     );
   });
 }

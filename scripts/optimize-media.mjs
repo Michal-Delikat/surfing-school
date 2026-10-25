@@ -188,9 +188,9 @@ async function buildFavicons() {
 
 async function writeManifest() {
   const manifest = {
-    name: "Barrel — szkoła surfingu",
+    name: "Barrel — surf school",
     short_name: "Barrel",
-    description: "Projekt koncepcyjny szkoły surfingu w Wydmowie.",
+    description: "A concept surf school in Canggu.",
     start_url: "/",
     display: "standalone",
     background_color: "#F7F5EF",
@@ -233,7 +233,7 @@ async function main() {
     const outFiles = await readdir(dir);
     let total = 0;
     for (const f of outFiles) total += await fileSize(path.join(dir, f));
-    console.log(`  ${path.relative(ROOT, dir)}: ${outFiles.length} plików, ${mb(total)}`);
+    console.log(`  ${path.relative(ROOT, dir)}: ${outFiles.length} files, ${mb(total)}`);
   }
   for (const f of await readdir(OUT_VIDEO)) {
     console.log(`    ${f}: ${mb(await fileSize(path.join(OUT_VIDEO, f)))}`);

@@ -175,7 +175,6 @@ a {
 .section--dark :focus-visible,
 .site-footer :focus-visible,
 .mobile-menu :focus-visible,
-.lightbox :focus-visible,
 .site-header:not(.is-scrolled) :focus-visible {
   outline-color: var(--coral);
 }

@@ -1,14 +1,12 @@
 import { initHeader } from "./header.js";
 import { initHeroVideo } from "./hero-video.js";
 import { initReveal } from "./reveal.js";
-import { initGallery } from "./gallery.js";
 import { initBooking } from "./booking.js";
 import { initStickyCta } from "./sticky-cta.js";
 
 initHeader();
 initHeroVideo();
 initReveal();
-initGallery();
 initBooking();
 initStickyCta();
 
