@@ -5,7 +5,6 @@ export function initStickyCta() {
 
   const blockers = [
     document.getElementById("terminy"),
-    document.getElementById("kontakt"),
     document.querySelector(".site-footer"),
   ].filter(Boolean);
 
